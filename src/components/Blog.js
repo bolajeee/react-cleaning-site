@@ -7,10 +7,12 @@ function Blog() {
       title: "10 Tips for a Cleaner Home",
       excerpt:
         "Discover the secrets to maintaining a spotless home with these professional tips.",
-      image:"https://img.freepik.com/free-photo/dissatisfied-sad-afro-american-woman-feels-fatigue-after-doing-housework-uses-cleaning-tools_273609-50167.jpg?semt=ais_hybrid",
+      image:
+        "https://img.freepik.com/free-photo/dissatisfied-sad-afro-american-woman-feels-fatigue-after-doing-housework-uses-cleaning-tools_273609-50167.jpg?semt=ais_hybrid",
       date: "March 15, 2024",
       author: "Sarah Johnson",
       category: "Home Cleaning",
+      slug: "10-tips-cleaner-home",
     },
     {
       id: 2,
@@ -22,6 +24,7 @@ function Blog() {
       date: "March 10, 2024",
       author: "Michael Brown",
       category: "Green Living",
+      slug: "benefits-green-cleaning",
     },
     {
       id: 3,
@@ -33,6 +36,7 @@ function Blog() {
       date: "March 5, 2024",
       author: "Emma Davis",
       category: "Commercial Cleaning",
+      slug: "office-cleaning-best-practices",
     },
   ];
 
@@ -62,9 +66,12 @@ function Blog() {
               </div>
               <h3>{post.title}</h3>
               <p>{post.excerpt}</p>
-              <a href="#" className="read-more">
+              <button
+                className="read-more"
+                onClick={() => (window.location.href = `/blog/${post.slug}`)}
+              >
                 Read More <i className="fas fa-arrow-right"></i>
-              </a>
+              </button>
             </div>
           </article>
         ))}

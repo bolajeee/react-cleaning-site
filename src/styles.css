@@ -62,6 +62,16 @@ nav {
 }
 
 /* Hero Section */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
@@ -227,12 +237,13 @@ nav {
   width: 35px;
   height: 35px;
   background-color: rgba(255, 255, 255, 0.1);
+  border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  text-decoration: none;
+  cursor: pointer;
   transition: all 0.3s;
 }
 
@@ -499,12 +510,15 @@ nav {
 }
 
 .read-more {
+  background: none;
+  border: none;
   color: #3498db;
-  text-decoration: none;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
+  padding: 0;
 }
 
 .read-more:hover {

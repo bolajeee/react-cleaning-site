@@ -1,21 +1,15 @@
 import React from "react";
-import styled from "styled-components";
-
-const HeroSection = styled.section`
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${process.env.PUBLIC_URL + "/images/header.jpg"});
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: white;
-`;
 
 function Hero() {
   return (
-    <HeroSection id="home">
+    <section
+      id="home"
+      className="hero"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url(${process.env.PUBLIC_URL}/images/hero.jpg)`,
+      }}
+    >
       <div className="hero-content">
         <h1>Professional Cleaning Services</h1>
         <p>Making your space sparkle, one room at a time</p>
@@ -23,7 +17,7 @@ function Hero() {
           Get a Quote
         </a>
       </div>
-    </HeroSection>
+    </section>
   );
 }
 

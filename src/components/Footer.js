@@ -84,18 +84,34 @@ function Footer() {
               </button>
             </form>
             <div className="social-links">
-              <a href="#" className="social-link">
+              <button
+                onClick={() => window.open("https://facebook.com/sparkleclean")}
+                className="social-link"
+              >
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="social-link">
+              </button>
+              <button
+                onClick={() => window.open("https://twitter.com/sparkleclean")}
+                className="social-link"
+              >
                 <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="social-link">
+              </button>
+              <button
+                onClick={() =>
+                  window.open("https://instagram.com/sparkleclean")
+                }
+                className="social-link"
+              >
                 <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="social-link">
+              </button>
+              <button
+                onClick={() =>
+                  window.open("https://linkedin.com/company/sparkleclean")
+                }
+                className="social-link"
+              >
                 <i className="fab fa-linkedin-in"></i>
-              </a>
+              </button>
             </div>
           </div>
         </div>
